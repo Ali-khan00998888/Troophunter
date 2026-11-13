@@ -1,0 +1,50 @@
+# Logs
+node_modules
+
+# certs/
+certs
+
+# production/
+/production/
+
+# postgress/
+postgres_dev
+postgres_stag
+postgres_prod
+
+# pgadmin/
+pgadmin/pgadmin
+
+.turbo
+
+# Environment secrets
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!.env.*.example
+!**/.env.example
+!**/.env.*.example
+
+# Build and dependency folders
+**/.next/
+**/node_modules/
+**/dist/
+**/build/
+
+# TypeScript cache
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+**/.DS_Store
+**/Thumbs.db
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx

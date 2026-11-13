@@ -1,0 +1,26 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: helloabdul-dev
+spec:
+  hosts:
+    - "dev.helloabdul.com"
+    - "www.dev.helloabdul.com"
+    - "helloabdul.develop"
+  gateways:
+    - istio-system/main-gateway
+  http:
+    - match:
+        - uri:
+            prefix: "/"
+      route:
+        - destination:
+            host: helloabdul-dev
+            port:
+              number: 3008
+      rewrite:
+        uri: "/"
+      headers:
+        response:
+          add:
+            x-frontend-catchall: "true"

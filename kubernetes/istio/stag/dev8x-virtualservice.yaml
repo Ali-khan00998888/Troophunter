@@ -1,0 +1,26 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: dev8x-stag
+spec:
+  hosts:
+    - "stag.dev8x.com"
+    - "www.stag.dev8x.com"
+    - "dev8x.stag"
+  gateways:
+    - istio-system/main-gateway
+  http:
+    - match:
+        - uri:
+            prefix: "/"
+      route:
+        - destination:
+            host: dev8x-stag
+            port:
+              number: 3004
+      rewrite:
+        uri: "/"
+      headers:
+        response:
+          add:
+            x-frontend-catchall: "true"

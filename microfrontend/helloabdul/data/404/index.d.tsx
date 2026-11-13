@@ -1,0 +1,66 @@
+import { PageLayoutContent } from '@repo/components/src/Interfaces/PageLayout/PageLayout';
+
+const PageData: PageLayoutContent = {
+  meta: {
+    title: '404 — Abdul | Abdul: World class digital products',
+    description: 'World-class digital products, idea to execution.'
+  },
+  footerMainContent: {
+    link: '/contact',
+    start: 'Let’s make',
+    end: 'something wonderful'
+  },
+  footerData: {
+    global: {
+      heading: 'I work globally',
+      email: 'contact@helloabdul.com',
+      buttonText: 'Hire me'
+    },
+    offices: [
+      {
+        country: 'Pakistan (Base)',
+        city: 'Lahore, Punjab',
+        phone: '+92 (329) 294-7777'
+      },
+      {
+        country: 'USA (Focus)',
+        city: 'San Francisco, CA',
+        phone: '+1 (321) 300-2393'
+      }
+    ],
+    // careers: {
+    //   heading: 'We’re Growing – Join Our Team',
+    //   description: 'Let’s build the future, together.',
+    //   link: '/careers',
+    //   linkText: 'Explore Careers'
+    // },
+    copyright: {
+      year: '2025',
+      text: 'Privacy Policy',
+      privacyLink: '/privacy'
+    }
+  },
+  footerSocialLinks: [
+    {
+      title: 'LinkedIn',
+      // icon: { name: 'AsteriskIcon', size: 10 },
+      href: 'https://www.linkedin.com/company/helloabdul/'
+    }
+    // {
+    //   title: 'Instagram',
+    //   icon: { name: 'AsteriskIcon', size: 10 },
+    //   href: 'https://www.instagram.com/reh.m.an/'
+    // },
+    // {
+    //   title: 'Facebook',
+    //   // icon: { name: 'AsteriskIcon', size: 10 },
+    //   href: 'https://www.facebook.com/share/15PGxbroKkm/'
+    // }
+    // {
+    //   title: 'Youtube',
+    //   href: 'https://www.youtube.com/@Dev8XOfficial-s3v'
+    // }
+  ]
+};
+
+export default PageData;
