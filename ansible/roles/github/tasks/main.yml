@@ -1,3 +1,0 @@
----
-- include_tasks: sudo_access.yml
-- include_tasks: clone_git_repo.yml
